@@ -1,3 +1,6 @@
+Remaining tasks: To achieve last mile PWA status create A Project using Firebase and deploy it to there and Run easily
+PS: I know it needs UI modification and auto stop after a player wins. I too tired to fix it
+
 # Tictactoe
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.14.
