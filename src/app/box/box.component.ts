@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-box',
@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./box.component.scss']
 })
 export class BoxComponent{
+    @Input()  value : 'O' | 'X';
 
-  constructor() { }
-
-}
+  }
