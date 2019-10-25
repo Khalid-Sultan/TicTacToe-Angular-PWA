@@ -1,1 +1,14 @@
-<p>board works!</p>
+<h1> Current Logged in player: {{player}} </h1> 
+<button nbButton outline status="danger" (click)="restart()">Restart Game</button>
+
+<h2 *ngIf="winner">
+    Player {{winner}} won the game!
+</h2>
+
+<main>
+    <app-box
+        *ngFor="let val of boxes; let i = index"
+                [value]="val"
+                (click)="choose(i)">
+    </app-box>
+</main>
