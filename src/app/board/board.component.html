@@ -1,5 +1,5 @@
 <h1> Current Logged in player: {{player}} </h1> 
-<button nbButton outline status="danger" (click)="restart()">Restart Game</button>
+<button nbButton outline status="danger" (click)="restart()">Restart new Game</button>
 
 <h2 *ngIf="winner">
     Player {{winner}} won the game!
@@ -7,8 +7,8 @@
 
 <main>
     <app-box
-        *ngFor="let val of boxes; let i = index"
-                [value]="val"
-                (click)="choose(i)">
+    *ngFor="let val of boxes; let i = index" 
+    [value]="val"
+    (click)="choose(i)"> 
     </app-box>
 </main>

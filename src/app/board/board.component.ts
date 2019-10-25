@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoardComponent implements OnInit {
 
-  boxes : any[];
+  boxes : string[];
   isNext : boolean;
   winner : string;
   
@@ -33,6 +33,7 @@ export class BoardComponent implements OnInit {
       this.isNext = !this.isNext;
     }
     this.winner = this.whoIsTheWinner();
+    
   }
 
   whoIsTheWinner() : string{
